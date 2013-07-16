@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BoxColor"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".OptionsActivity" >
+
+    <TextView
+        android:id="@+id/textback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="50dp"
+        android:text="Background Color"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textborder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textx"
+        android:layout_below="@+id/textx"
+        android:layout_marginTop="29dp"
+        android:text="Line Color"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textback"
+        android:layout_below="@+id/textback"
+        android:layout_marginTop="36dp"
+        android:text="O Marker Color"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto"
+        android:layout_below="@+id/texto"
+        android:layout_marginTop="38dp"
+        android:text="X Marker Color"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinnerBack"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/texto"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginRight="14dp"
+        android:entries="@array/colors" />
+
+    <Spinner
+        android:id="@+id/SpinnerOmarker"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textx"
+        android:layout_marginBottom="-10dp"
+        android:layout_alignLeft="@+id/spinnerBack"
+        android:entries="@array/colors" />
+
+    <Spinner
+        android:id="@+id/SpinnerXmarker"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textx"
+        android:layout_alignLeft="@+id/SpinnerOmarker"
+        android:layout_marginBottom="-10dp"
+        android:entries="@array/colors" />
+
+    <Spinner
+        android:id="@+id/SpinnerLine"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textborder"
+        android:layout_alignLeft="@+id/SpinnerXmarker"
+        android:layout_marginBottom="-10dp"
+        android:entries="@array/colors" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/SpinnerLine"
+        android:layout_marginBottom="58dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCancel"
+        android:layout_alignBottom="@+id/btnCancel"
+        android:layout_toLeftOf="@+id/btnCancel"
+        android:text="Ok" />
+
+</RelativeLayout>

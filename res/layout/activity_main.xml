@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*">
+
+  		<TableRow
+  		    android:id="@+id/tableRow1"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="0dp"
+  		    android:layout_weight="1"
+  		    android:background="@color/BorderColor" >
+
+			<TextView
+			    android:id="@+id/_1_1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:onClick="onClick"
+			    android:text="X"
+			    android:textColor="@color/Xcolor"
+			    android:textSize="100sp" />
+           
+			<TextView
+			    android:id="@+id/_1_2"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:onClick="onClick"
+			    android:text="X"
+			    android:textColor="@color/Xcolor"
+			    android:textSize="100sp" />
+        
+			<TextView
+			    android:id="@+id/_1_3"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:onClick="onClick"
+			    android:text="X"
+			    android:textColor="@color/Xcolor"
+			    android:textSize="100sp" />
+
+		</TableRow>
+  		<TableRow
+  		    android:id="@+id/tableRow2"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="0dp"
+  		    android:layout_weight="1"
+  		    android:background="@color/BorderColor" >
+
+			<TextView
+			    android:id="@+id/_2_1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:onClick="onClick"
+			    android:text="O"
+			    android:textColor="@color/Ocolor"
+			    android:textSize="100sp" />
+           
+			<TextView
+			    android:id="@+id/_2_2"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:text="X"
+			    android:onClick="onClick"
+			    android:textColor="@color/Xcolor"
+			    android:textSize="100sp" />
+        
+			<TextView
+			    android:id="@+id/_2_3"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:text="O"
+			    android:onClick="onClick"
+			    android:textColor="@color/Ocolor"
+			    android:textSize="100sp" />
+
+		</TableRow>
+  		<TableRow
+  		    android:id="@+id/tableRow3"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="0dp"
+  		    android:layout_weight="1"
+  		    android:background="@color/BorderColor" >
+
+			<TextView
+			    android:id="@+id/_3_1"
+			    android:onClick="onClick"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:text="X"
+			    android:textColor="@color/Xcolor"
+			    android:textSize="100sp" />
+           
+			<TextView
+			    android:id="@+id/_3_2"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:text="X"
+			    android:onClick="onClick"
+			    android:textColor="@color/Xcolor"
+			    android:textSize="100sp" />
+        
+			<TextView
+			    android:id="@+id/_3_3"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:clickable="true"
+			    android:gravity="center"
+			    android:text="X"
+			    android:onClick="onClick"
+			    android:textColor="@color/Xcolor"
+			    android:textSize="100sp" />
+
+		</TableRow>
+  		
+		<TableRow
+		    android:id="@+id/tableRow4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="0"
+		    android:background="@color/BorderColor"
+		    android:gravity="bottom|end" >
+        
+			<TextView
+			    android:id="@+id/turn_status"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="1px"
+			    android:layout_weight="1"
+			    android:background="@color/BoxColor"
+			    android:text="Players Turn: O"
+			    android:textColor="@color/BorderColor"
+			    android:textSize="16sp" />
+           
+		</TableRow>
+
+		<TableRow
+		    android:id="@+id/tableRow5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="0"
+		    android:background="@color/BorderColor"
+		    android:gravity="bottom" >
+        
+			<TextView
+			    android:id="@+id/xwins"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:text="X Wins: 0"
+			    android:textColor="@color/BorderColor"
+			    android:textSize="16sp" />
+
+			<TextView
+			    android:id="@+id/owins"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:text=" O Wins: 0"
+			    android:textColor="@color/BorderColor"
+			    android:textSize="16sp" />
+
+			<TextView
+			    android:id="@+id/ties"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="1px"
+			    android:background="@color/BoxColor"
+			    android:text=" Tie: 0"
+			    android:textColor="@color/BorderColor"
+			    android:textSize="16sp" />
+		</TableRow>
+</TableLayout>

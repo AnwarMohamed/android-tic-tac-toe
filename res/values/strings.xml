@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="help_text">Be the first to get three in a row! This multiplayer game is played on a 3 by 3 game board. One player is X, the other O. Players alternate placing their X or O on one of the empty fields. The game ends when one player gets three in a row or when there is no empty field left, in which case the game ends in a tie.</string>
+    <string-array name="colors">
+        <item >Black</item>
+        <item >White</item>
+        <item >Red</item>
+        <item >Blue</item>
+        <item >Green</item>
+        <item >Yellow</item>
+        <item >Gray</item>
+    </string-array>
+
+</resources>
